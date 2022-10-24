@@ -1,0 +1,7 @@
+{
+    "command-runner.commands": {
+        "oj test": "oj test -c ${fileDirname}/a.out -d ${fileDirname}/tests",
+        "acc submit": "cd ${fileDirname} && acc submit ${file} || cd ../../",
+        "echo": "echo 'this is a test command: ${file}'"
+    }
+}
