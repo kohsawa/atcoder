@@ -1,8 +1,10 @@
 {
     "command-runner.commands": {
-		"compile": "g++ -o ${fileDirname}/a.out ${fileDirname}/main.cpp",
+        "compile": "g++ -o ${fileDirname}/a.out ${fileDirname}/main.cpp",
         "oj test": "oj test -c ${fileDirname}/a.out -d ${fileDirname}/tests",
+        "oj test + compile": "g++ -o ${fileDirname}/a.out ${fileDirname}/main.cpp && oj test -c ${fileDirname}/a.out -d ${fileDirname}/tests",
         "acc submit": "cd ${fileDirname} && acc submit ${file} || cd ../../",
         "echo": "echo 'this is a test command: ${file}'"
-    }
+    },
+    "editor.formatOnSave": true
 }
