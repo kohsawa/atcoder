@@ -6,5 +6,8 @@
         "acc submit": "cd ${fileDirname} && acc submit ${file} || cd ../../",
         "echo": "echo 'this is a test command: ${file}'"
     },
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "files.associations": {
+        "iostream": "cpp"
+    }
 }
